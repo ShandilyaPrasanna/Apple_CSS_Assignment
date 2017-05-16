@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Scenario 3</title>
+	
+</head>
+<body onload="luckyEmp()">
+<ul id="emp">
+<li>331967</li>
+<li>234567</li>
+<li>098765</li>
+<li>365123</li>
+<li>987123</li>
+<li>789012</li>
+<li>906750</li>
+<li>234789</li>
+<li>987342</li>
+<li>567823</li>
+</ul>
+</body>
+<script>
+function luckyEmp(){
+	var li,ul,p,i;
+	 ul=document.getElementById("emp");
+	
+	 li=document.getElementsByTagName('li');
+	
+	for( i=0;i<li.length;i++)
+	{
+ p=li[i].innerHTML;
+ 
+if(p.indexOf(5)>-1)
+{
+	
+	li[i].style.color="blue";
+	}
+}
+}
+</script>
+</html>
